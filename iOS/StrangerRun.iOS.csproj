@@ -120,6 +120,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
+    <Folder Include="Resources\Content\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
@@ -132,6 +133,14 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Content\street.tmx" />
+    <BundleResource Include="Resources\Content\tileset_ground.png" />
+    <BundleResource Include="Resources\Content\mike11.plist" />
+    <BundleResource Include="Resources\Content\mike11.png" />
+    <BundleResource Include="Resources\Content\van.png" />
+    <BundleResource Include="Resources\Content\force_0.png" />
   </ItemGroup>
   <Import Project="..\StrangerRun\StrangerRun.projitems" Label="Shared" Condition="Exists('..\StrangerRun\StrangerRun.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

@@ -7,7 +7,6 @@ namespace StrangerRun
         public App()
         {
             InitializeComponent();
-
             MainPage = new StrangerRunPage();
         }
 

@@ -19,10 +19,22 @@
     <Compile Include="$(MSBuildThisFileDirectory)View\StrangerRunPage.xaml.cs">
       <DependentUpon>StrangerRunPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Game\BikeRunLayer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Game\Layers\BackgroundLayer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Game\Scenes\StartScene.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Game\StrangerController.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Game\Scenes\StreetScene.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Game\Entities\BikerEntity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Game\Geometry\Polygon.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Game\Geometry\CIrcle.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Game\Geometry\Segment.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Game\Entities\VanEntity.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Game\" />
     <Folder Include="$(MSBuildThisFileDirectory)View\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Game\Layers\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Game\Entities\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Game\Scenes\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Game\Geometry\" />
   </ItemGroup>
 </Project>
