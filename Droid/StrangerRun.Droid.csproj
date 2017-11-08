@@ -106,6 +106,22 @@
     <Reference Include="Xamarin.Forms.Xaml">
       <HintPath>..\packages\Xamarin.Forms.2.4.0.280\lib\MonoAndroid10\Xamarin.Forms.Xaml.dll</HintPath>
     </Reference>
+    <Reference Include="CocosSharp">
+      <HintPath>..\packages\CocosSharp.1.7.1.0\lib\MonoAndroid10\CocosSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Lidgren.Network">
+      <HintPath>..\packages\CocosSharp.1.7.1.0\lib\MonoAndroid10\Lidgren.Network.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Framework">
+      <HintPath>..\packages\CocosSharp.1.7.1.0\lib\MonoAndroid10\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="box2d">
+      <HintPath>..\packages\CocosSharp.Forms.1.7.1.0\lib\MonoAndroid10\box2d.dll</HintPath>
+    </Reference>
+    <Reference Include="CocosSharp.Forms">
+      <HintPath>..\packages\CocosSharp.Forms.1.7.1.0\lib\MonoAndroid10\CocosSharp.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTK-1.0" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
@@ -126,6 +142,13 @@
     <AndroidResource Include="Resources\drawable-hdpi\icon.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\icon.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Content\van.png" />
+    <AndroidAsset Include="Assets\Content\mike11.plist" />
+    <AndroidAsset Include="Assets\Content\mike11.png" />
+    <AndroidAsset Include="Assets\Content\street.tmx" />
+    <AndroidAsset Include="Assets\Content\tileset_ground.png" />
   </ItemGroup>
   <Import Project="..\StrangerRun\StrangerRun.projitems" Label="Shared" Condition="Exists('..\StrangerRun\StrangerRun.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
